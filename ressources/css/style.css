@@ -1,0 +1,183 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ---------- FORMULAIRE RECHERCHE ---------- */
+
+.formulaire-recherche {
+
+    margin: 40px 0px;
+    box-shadow: 1px 1px 0px 1px rgba(153, 153, 153, 0.678);
+
+}
+
+.titre-formulaire {
+
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.titre-formulaire::after {
+
+    display: block;
+    height: 2px;
+    background-color: #0c7b93;
+    width: 100px;
+    content:" ";
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.form-space {
+
+    margin: 10px 0;
+    width: 100%;
+
+}
+
+label .nb-voyageur {
+
+    margin-left: 65px;
+
+}
+
+button {
+
+    background-color: #0c7b93 ;
+    border-radius: 10px;
+    border: none;
+    box-shadow:1px 1px 3px #999;
+    
+
+}
+
+
+.btn-recherche {
+
+    
+    margin: 10px 00px;
+    padding: 5px 20px;
+    
+}
+
+
+/*  ---------- CARTE DE SERVICES ---------- */
+
+.carte-services {
+
+    
+    margin: 40px 30px;
+
+}
+
+
+.card-head img {
+
+    width: 100%;
+    border-radius: 2px;
+    
+
+}
+
+.card {
+
+    margin-bottom: 10px;
+
+}
+
+.card-body {
+
+    text-align: center;
+
+}
+
+
+.card-body a {
+
+    
+    background-color: #0c7b93 ;
+    border-radius: 10px;
+    border: none;
+    text-decoration:none;
+    color: #000;
+    
+    
+
+}
+
+
+.btn-card {
+
+    padding: 5px 20px;
+
+}
+
+
+/*  ---------- LES INCONTOURNABLES ---------- */
+
+
+.titre-incon{
+
+    text-align: center;
+
+}
+
+.titre-incon::after{
+
+    display: block;
+    height: 2px;
+    background-color: #0c7b93;
+    width: 100px;
+    content:" ";
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.incon {
+
+    margin: 10px 0;
+    box-shadow: 1px 1px 3px #999;
+    border-radius: 10px;
+    padding: 0 0 10px 0;
+    width: 100%;
+    
+
+}
+.img-incon img {
+
+    width: 100%;
+    border-radius: 10px;
+    
+
+}
+
+
+.img-incon h5 {
+
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+
