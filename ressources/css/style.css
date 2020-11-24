@@ -66,6 +66,7 @@ button {
     border-radius: 10px;
     border: none;
     box-shadow:1px 1px 3px #999;
+    text-align: center;
     
 
 }
@@ -73,8 +74,8 @@ button {
 
 .btn-recherche {
 
-    
-    margin: 10px 00px;
+    width: 100%;
+    margin: 10px 0px;
     padding: 5px 20px;
     
 }
@@ -164,20 +165,77 @@ button {
     
 
 }
+
 .img-incon img {
 
     width: 100%;
     border-radius: 10px;
-    
 
 }
 
-
-.img-incon h5 {
+.incon h5 {
 
     margin-top: 10px;
     text-align: center;
 
 }
 
+.incon p {
 
+    padding: 0 8px;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+@media (min-width:990px) {
+
+    .img-incon {
+
+        overflow: hidden;
+    
+    }
+    
+    .img-incon img {
+    
+        transition: 2s;
+    
+    }
+    
+    
+    .img-incon img:hover{
+    
+        transform: scale(1.2);
+        
+    
+    }
+
+    .incon .content {
+
+        position:absolute;
+        top: 15px;
+        left: 20px;
+        bottom:70px;
+        right: 20px;
+        background: rgba(0,0,0,0.8);
+        transform: scaleY(0);
+        transition: transform 1s;
+    }
+
+    .incon:hover .content {
+
+        transform: scaleY(1);
+
+    }
+
+    .incon .content p {
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #fff;
+
+    }
+
+}
