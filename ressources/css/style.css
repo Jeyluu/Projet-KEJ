@@ -62,7 +62,7 @@ label .nb-voyageur {
 
 button {
 
-    background-color: #0c7b93 ;
+    background: linear-gradient(0deg, rgba(12,123,147,1) 0%, rgba(20,40,80,1) 100%);
     border-radius: 10px;
     border: none;
     box-shadow:1px 1px 3px #999;
@@ -185,6 +185,244 @@ button {
     padding: 0 8px;
     text-align: center;
     font-size: 15px;
+
+}
+
+/*  ---------- RESERVATION 2 ---------- */
+
+/*  ---------- BANDEAU INFOS ---------- */
+
+.headerbis {
+
+    background-color: #27496d;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    
+}
+
+.bandeauinfo {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+}
+
+.bandeauinfo div {
+
+    margin: 10px;
+
+}
+
+.btn-bdo {
+
+    padding: 10px 50px;
+
+}
+
+.btn-bdo:hover {
+
+    
+    color: #fff;
+    transition: 0.2s;
+
+}
+
+/*  ---------- LES PROPOSITIONS ---------- */
+
+.filtres {
+
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    margin-top:20px;
+
+}
+
+.ligne1 {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: -1px 1px 1px 1px #0c7b93;
+    
+    
+    
+}
+
+.infos-trajet {
+
+    
+    display: flex;
+    text-transform: uppercase;
+    width: 100%;
+    text-decoration: none;
+    color: #000;
+    
+
+}
+
+.heure {
+
+    margin: 5px 10px;
+
+}
+
+.arret {
+
+    margin: 5px 10px;
+
+}
+
+.sous-infos {
+
+    font-style: italic;
+    color: #818181;
+
+}
+
+.tarif {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 50px;
+    padding-top: 15px;
+    box-shadow: 1px -1px 1px 1px #0c7b93;
+    
+
+}
+
+.tarif p {
+
+    color: #000;
+
+}
+
+a .tarif p{
+
+    text-decoration: none;
+}
+/*  ---------- OPTIONS ---------- */
+
+.options {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.options button {
+
+    padding: 10px 60px;
+    margin-left: 10px;
+
+}
+
+.card ul li {
+
+    list-style-type: disc;
+
+
+}
+
+/*  ---------- BOUTON TARIFS ---------- */
+
+.btn-tarifs {
+
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px 60px;
+
+}
+
+.btn-tarifs button {
+
+    padding: 10px 40px;
+}
+
+.btn-tarifs button:hover {
+
+    color: #fff;
+
+    
+}
+
+
+/*  ---------- LE SAVIEZ VOUS ---------- */
+.card {
+
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(221, 240, 255);
+    
+}
+
+.card-header{
+
+    padding: 0;
+    margin: 10px;
+}
+
+.card-header button {
+
+    padding: 10px 60px;
+}
+
+.card-header button:hover{
+
+    
+    color: #fff;
+}
+
+@media (min-width:650px) {
+
+
+/*  ---------- LES PROPOSITIONS ---------- */
+
+.ligne1 {
+
+    flex-wrap: nowrap;
+    box-shadow: none;
+    
+}
+
+.ligne1:hover {
+
+    transform: scale(1.1);
+    transition: 1s;
+    
+    
+}
+
+.infos-trajet {
+
+    width: 800px;
+    margin-left: 10px;
+    box-shadow: -1px 1px 2px 1px #0c7b93;
+    
+}
+
+
+.tarif {
+
+    width: 200px;
+    margin: 0px 10px 0px 0px;
+
+}
+
+
 
 }
 
