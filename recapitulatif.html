@@ -5,12 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Récapitulatif de votre commande</title>
 
-    <link rel="stylesheet" href="./ressources/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="./ressources/stylee.css" charset="utf-8">
+
 </head>
 <body>
     <div class="title-recap">
         <h1>Votre commande a bien été enregistré.</h1>
     </div>
+
+    <div class="paypal">
+
+        <div class="paypal__header">
+          <div class="paypal__logo-wrapper">
+            <img src="./ressources/images/logo.jpg" alt="Paypal" class="paypal__logo">
+          </div>
+  
+          <div class="paypal__header-info">
+            <span class="paypal__date">30.09.2026</span>
+            <span class="paypal__ref">Réf:28-713</span>
+          </div>
+        </div>
+  
+        <div class="paypal__subheader-wrapper">
+          <div class="paypal__subheader">
+            <h1 class="paypal__username">Vladouuuu, Salut !</h1>
+            <span class="paypal__help-text">Vous avez commandé (1) billet d'Hyperloop</span>
+          </div>
+        </div>
+  
+        <div class="paypal__cart">
+          <h2 class="paypal__cart-title">Panier:</h2>
+  
+          <ul class="paypal__cart-list">
+            <li class="paypal__cart-item">
+              <span class="paypal__index">1</span>
+              <span class="paypal__item-name">Aller-Retour: Amsterdam - Los Angeles</span>
+              <span class="paypal__item-price">550.00€</span>
+            </li>
+  
+            <li class="paypal__cart-item">
+              <span class="paypal__index">2</span>
+              <span class="paypal__item-name">Supplément bagage</span>
+              <span class="paypal__item-price">125.00€</span>
+            </li>
+  
+            <li class="paypal__cart-item">
+              <span class="paypal__index">1</span>
+              <span class="paypal__item-name">Abonnement Premium -5%</span>
+              <span class="paypal__item-price">-36.25€</span>
+            </li>
+  
+            <li class="paypal__cart-item">
+              <span class="paypal__cart-total">Total</span>
+              <span class="paypal__item-price">688.75€</span>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="paypal__footer">
+          <button class="big-button button" style="width: 250px;">Confirmer votre commande</button>
+        </div>
+      </div>
     
 </body>
 </html>
