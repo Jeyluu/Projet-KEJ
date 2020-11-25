@@ -60,11 +60,7 @@ header{
     color: #ffffff;
     text-transform: uppercase;
 }
-@media(min-width:1400px){
-    .navbar-collapse{
-        margin-left: 120%;
-    }
-}
+
 /*------------title------------------------*/
 .row-hyperloop{
     position: absolute;
@@ -310,10 +306,18 @@ header{
     }
 }
 /*TIMELINE==========================*/
+.parallax{
+    background: url(../image/hyperloop-paysage.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;   
+
+}
 .timeline{
     position: relative;
     margin: 50px auto;
-    padding: 40px 0;
+    padding: 40px 0; 
 }
 .timeline:before{
     content: '';
@@ -369,5 +373,6 @@ header{
     border-radius: 50%;
     box-shadow: 0 0 0 3px #0c7b93;
 }
+
 /*FOOTER===========================================*/
 
