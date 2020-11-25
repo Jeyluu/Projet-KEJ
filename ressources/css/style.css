@@ -62,14 +62,15 @@ label .nb-voyageur {
 
 button {
 
-    background: linear-gradient(0deg, rgba(12,123,147,1) 0%, rgba(20,40,80,1) 100%);
+    background: linear-gradient(0deg, rgba(12,123,147,1) 0%, rgba(20,40,80,1) 120%);
     border-radius: 10px;
     border: none;
     box-shadow:1px 1px 3px #999;
     text-align: center;
-    
+    color: #fff;
 
 }
+
 
 
 .btn-recherche {
@@ -220,16 +221,11 @@ button {
 .btn-bdo {
 
     padding: 10px 50px;
-
-}
-
-.btn-bdo:hover {
-
-    
     color: #fff;
-    transition: 0.2s;
 
 }
+
+
 
 /*  ---------- LES PROPOSITIONS ---------- */
 
@@ -307,10 +303,7 @@ button {
 
 }
 
-a .tarif p{
 
-    text-decoration: none;
-}
 /*  ---------- OPTIONS ---------- */
 
 .options {
@@ -325,6 +318,7 @@ a .tarif p{
 
     padding: 10px 60px;
     margin-left: 10px;
+    color: #fff;
 
 }
 
@@ -348,15 +342,11 @@ a .tarif p{
 
 .btn-tarifs button {
 
-    padding: 10px 40px;
-}
-
-.btn-tarifs button:hover {
-
+    padding: 15px 40px;
     color: #fff;
-
-    
 }
+
+
 
 
 /*  ---------- LE SAVIEZ VOUS ---------- */
@@ -369,25 +359,55 @@ a .tarif p{
     
 }
 
+.card button {
+
+    padding: 10px 500px;
+
+}
+
+.btn-asavoir {
+    
+    font-size: 15px;
+    
+}
 .card-header{
 
     padding: 0;
     margin: 10px;
 }
 
-.card-header button {
+.card-header-asavoir button {
 
-    padding: 10px 60px;
-}
-
-.card-header button:hover{
-
-    
+    padding: 15px 60px;
     color: #fff;
 }
 
+
+.card-asavoir {
+
+    text-align: center;
+    padding: 5px;
+
+}
+
+
+
+
+
+
+
 @media (min-width:650px) {
 
+    
+
+    button:hover {
+
+        background: linear-gradient(0deg, rgb(147, 12, 12) 0%, rgba(20,40,80,1) 100%);
+        transform: scale(1.01);
+        transition: 500ms;
+        
+    
+    }
 
 /*  ---------- LES PROPOSITIONS ---------- */
 
@@ -400,7 +420,7 @@ a .tarif p{
 
 .ligne1:hover {
 
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 1s;
     
     
@@ -408,10 +428,10 @@ a .tarif p{
 
 .infos-trajet {
 
-    width: 800px;
+    
     margin-left: 10px;
     box-shadow: -1px 1px 2px 1px #0c7b93;
-    
+    width: 400px;
 }
 
 
@@ -421,8 +441,6 @@ a .tarif p{
     margin: 0px 10px 0px 0px;
 
 }
-
-
 
 }
 
@@ -474,6 +492,18 @@ a .tarif p{
         text-align: center;
         color: #fff;
 
+    }
+
+}
+
+
+@media (min-width:1000px) {
+
+    .infos-trajet {
+
+    
+        
+        width: 800px;
     }
 
 }
