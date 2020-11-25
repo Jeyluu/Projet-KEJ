@@ -18,7 +18,7 @@
 }
 
 body {
-    background-color: rgb(203, 243, 255);
+    background-color: rgb(228, 228, 228);
 }
 
 
@@ -53,6 +53,11 @@ body {
                                       rgba(0, 0, 0, 0));
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.home-title a {
+  text-decoration: none;
+  color: #fff;
 }
 
 
@@ -419,6 +424,15 @@ body {
         left: 90%;
     }
 
+    .carousel-item p {
+      font-size: larger;
+    }
+
+    .carousel-item h2 {
+      font-size: 300%;
+    }
+
+
     .profil {
         display: grid;
         grid-template-columns: 250px 250px;
@@ -464,12 +478,23 @@ body {
     .footer-bs {
       margin-top: 10px;
     }
+
+    .carousel-item p {
+      font-size: xx-large;
+    }
+
+    .carousel-item h2 {
+      font-size: 400%;
+    }
 }
 
 
 
+
+/********************** PAGE RECAPITULATIF **********************/
+
 .title-recap {
-  background-color: var(--main3);
+  background-color: var(--main2);
   color: white;
   text-align: center;
   margin-top: 20px;
@@ -488,12 +513,13 @@ body {
   min-width: 500px;
   max-width: 700px;
   width: auto;
-  padding: 25px 55px;
+  margin: 20px 20px;
   clear: both;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 }
 
 .paypal__header {
