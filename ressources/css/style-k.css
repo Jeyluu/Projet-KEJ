@@ -10,14 +10,31 @@ h3, h4, map : font-family: 'Goldman', cursive;*/
 
 /*CSS DIRECTORY
 
-
-1=HEADER
-2=PRESENTATION
+1=GLOBAL
+2=HEADER
+3=PRESENTATION
+4=TIMELINE
+5=FOOTER
 */
 
+
+/*GLOBAL==========================================*/
 body{
     margin: 0;
     padding: 0;
+}
+h1{
+    color: #00a8cc;
+    text-shadow: 0 0 10px #00a8cc;
+    text-transform: uppercase;
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+    margin: 60px 0 60px 0;
+}
+h3{
+    font-family: 'Goldman', cursive;
+    text-transform: uppercase;
+    text-align: center;
 }
 /*HEADER================================*/
 header{
@@ -108,7 +125,7 @@ header{
     filter: blur(30px);
 }
 /*---------button-----------------------------------------*/
-a{
+.btn-header{
     position: relative;
     display: inline-block;
     padding: 10px 10px;
@@ -119,7 +136,7 @@ a{
     overflow: hidden;
     transition: 0.5s;
 }
-a:hover
+.btn-header:hover
 {
     color: #ffffff;
     text-decoration: none;
@@ -129,11 +146,11 @@ a:hover
                 0 0 50px #00a8cc,
                 0 0 200px #00a8cc;
 }
-a span{
+.btn-header span{
     position: absolute;
     display: block;
 }
-a span:nth-child(1){
+.btn-header span:nth-child(1){
     top: 0;
     left: -100%;
     width: 100%;
@@ -150,7 +167,7 @@ a span:nth-child(1){
         left: 100%;
     }
 }
-a span:nth-child(2){
+.btn-header span:nth-child(2){
     top: -100%;
     right: 0;
     width: 2px;
@@ -168,7 +185,7 @@ a span:nth-child(2){
         top: 100%;
     }
 }
-a span:nth-child(3){
+.btn-header span:nth-child(3){
     bottom: 0;
     left: 100%;
     width: 100%;
@@ -186,7 +203,7 @@ a span:nth-child(3){
         left: -100%;
     }
 }
-a span:nth-child(4){
+.btn-header span:nth-child(4){
     bottom: -100%;
     left: 0;
     width: 2px;
@@ -205,28 +222,16 @@ a span:nth-child(4){
     }
 }
 /*PRESENTATION========================*/
-h1{
-    color: #00a8cc;
-    text-shadow: 0 0 10px #00a8cc;
-    text-transform: uppercase;
-    font-family: 'Audiowide', cursive;
+
+.text{
+    margin-top: 140px;
 }
-h3{
-    font-family: 'Goldman', cursive;
-    text-transform: uppercase;
-}
-.title{
-    text-align: center;
-    margin: 60px 0 120px 0;
-    
-}
-h3{
-    text-align: center;
-}
+
 .map{
     display: block;
     position: relative;
     font-family: 'Goldman', cursive;
+    margin: 30px 0 120px 0;
 }
 .mm{
     margin: 80px 0 0 120px;
@@ -299,3 +304,70 @@ h3{
         
     }
 }
+@media(max-width:500px){
+    .mm, .la, .pb{
+        margin-left: 10px;
+    }
+}
+/*TIMELINE==========================*/
+.timeline{
+    position: relative;
+    margin: 50px auto;
+    padding: 40px 0;
+}
+.timeline:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #00a8cc;
+}
+.timeline .ul-time{
+    margin: 0;
+    padding: 0;
+}
+.timeline .ul-time .li-time{
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.timeline .ul-time .li-time:nth-child(odd){
+    float: left;
+    text-align: right;
+    clear: both;
+}
+.timeline .ul-time .li-time:nth-child(even){
+    float: right;
+    text-align: left;
+    clear: both;
+}
+.content{
+    padding-bottom: 20px;
+}
+.timeline .ul-time .li-time:nth-child(odd):before{
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: #00a8cc;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #0c7b93;
+}
+.timeline .ul-time .li-time:nth-child(even):before{
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    background: #00a8cc;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #0c7b93;
+}
+/*FOOTER===========================================*/
+
