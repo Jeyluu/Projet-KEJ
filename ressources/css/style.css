@@ -1,3 +1,14 @@
+
+:root {
+    --main-color: #142850;
+    --main1: #27496d;
+    --main2: #0c7b93;
+    --main3: #00a8cc;
+    --titleh1:#00a8cc;
+    --fonth1:'Audiowide', cursive;
+}
+
+
 * {
 
     margin: 0;
@@ -10,12 +21,24 @@
 
 
 
+/*  ---------- NAV BAR ---------- */
 
+.navbar {
 
+    background-color: var(--main1);
+    
+}
 
+.navbar .navbar-brand{
 
+color: #fff;
 
+}
 
+.navbar .navbar-nav .nav-item .nav-link{
+
+    color: #fff;
+}
 
 
 /*  ---------- FORMULAIRE RECHERCHE ---------- */
@@ -23,29 +46,20 @@
 .formulaire-recherche {
 
     margin: 40px 0px;
-    box-shadow: 1px 1px 0px 1px rgba(153, 153, 153, 0.678);
-
+    box-shadow:rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
 }
 
 .titre-formulaire {
 
     text-align: center;
     margin-bottom: 20px;
+    font-family: var(--fonth1);
+    color: var(--titleh1);
 
 }
 
-.titre-formulaire::after {
 
-    display: block;
-    height: 2px;
-    background-color: #0c7b93;
-    width: 100px;
-    content:" ";
-    margin: 0 auto;
-    margin-top: 10px;
-    text-align: center;
-
-}
 
 .form-space {
 
@@ -140,26 +154,16 @@ button {
 
 .titre-incon{
 
+    font-family: var(--fonth1);
+    color: var(--titleh1);
     text-align: center;
 
 }
 
-.titre-incon::after{
-
-    display: block;
-    height: 2px;
-    background-color: #0c7b93;
-    width: 100px;
-    content:" ";
-    margin: 0 auto;
-    margin-top: 10px;
-    text-align: center;
-
-}
 
 .incon {
 
-    margin: 10px 0;
+    margin: 40px 0;
     box-shadow: 1px 1px 3px #999;
     border-radius: 10px;
     padding: 0 0 10px 0;
@@ -187,6 +191,7 @@ button {
     padding: 0 8px;
     text-align: center;
     font-size: 15px;
+    
 
 }
 
@@ -201,6 +206,7 @@ button {
     padding: 20px 0;
     color: #fff;
     
+    
 }
 
 .bandeauinfo {
@@ -210,6 +216,12 @@ button {
     align-items: center;
     flex-wrap: wrap;
     
+
+}
+
+.bandeauinfo h2 {
+
+    font-family: var(--fonth1);
 
 }
 
@@ -307,6 +319,7 @@ button {
 
 /*  ---------- OPTIONS ---------- */
 
+
 .options {
 
     display: flex;
@@ -323,8 +336,15 @@ button {
 
 }
 
+.card ul {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 .card ul li {
 
+    padding: 10px;
     list-style-type: disc;
 
 
@@ -391,11 +411,61 @@ button {
 
 }
 
+/********************** FOOTER **********************/
+
+.row {
+
+    width: 100%;
+}
+
+
+.footer-bs {
+    background-color: var(--main1);
+	padding: 10px 10px 20px;
+	color: rgba(255,255,255,1.00);
+}
+.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { padding:10px 25px; }
+.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-color: transparent; }
+.footer-bs .footer-brand h2 { margin:0px 0px 10px; }
+.footer-bs .footer-brand p { font-size:12px; color:rgba(255,255,255,0.70); }
+
+.footer-bs .footer-nav ul.pages { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.pages li { padding:5px 0px;}
+.footer-bs .footer-nav ul.pages a { color:rgba(255,255,255,1.00); font-weight:bold; text-transform:uppercase; }
+.footer-bs .footer-nav ul.pages a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+.footer-bs .footer-nav h4 {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom:10px;
+}
+
+.footer-bs .footer-nav ul.list { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.list li { padding:5px 0px;}
+.footer-bs .footer-nav ul.list a { color:rgba(255,255,255,0.80); }
+.footer-bs .footer-nav ul.list a:hover { color:rgba(255,255,255,0.60); text-decoration:none; }
+
+.footer-bs .footer-social ul { list-style:none; padding:0px; }
+.footer-bs .footer-social h4 {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.footer-bs .footer-social li { padding:5px 4px;}
+.footer-bs .footer-social a { color:rgba(255,255,255,1.00);}
+.footer-bs .footer-social a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+
+.footer-bs .footer-ns h4 {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom:10px;
+}
+.footer-bs .footer-ns p { font-size:12px; color:rgba(255,255,255,0.70); }
 
 
 @media (min-width:650px) {
 
-    
 
     button:hover {
 
@@ -405,6 +475,8 @@ button {
         
     
     }
+
+
 
 /*  ---------- LES PROPOSITIONS ---------- */
 
@@ -443,6 +515,8 @@ button {
 
 @media (min-width:990px) {
 
+
+
     .img-incon {
 
         overflow: hidden;
@@ -473,6 +547,7 @@ button {
         background: rgba(0,0,0,0.8);
         transform: scaleY(0);
         transition: transform 1s;
+        margin: 30px 0px;
     }
 
     .incon:hover .content {
@@ -488,6 +563,7 @@ button {
         transform: translateY(-50%);
         text-align: center;
         color: #fff;
+        
 
     }
 
@@ -496,11 +572,13 @@ button {
 
 @media (min-width:1000px) {
 
+
     .infos-trajet {
 
     
         
         width: 800px;
     }
+
 
 }
