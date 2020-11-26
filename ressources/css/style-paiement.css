@@ -7,7 +7,7 @@ body{
 /*GLOBAL*/
 h1{
   color: #00a8cc;
-  text-shadow: 0 0 4px #00a8cc;
+  text-shadow: 0 0 3px black;
   text-transform: uppercase;
   font-family: 'Audiowide', cursive;
   text-align: center;
