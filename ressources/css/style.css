@@ -364,10 +364,15 @@ button {
 
 }
 
-.btn-tarifs button {
+.btn-tarifs button a{
 
     padding: 15px 40px;
+    background: linear-gradient(0deg, rgba(12,123,147,1) 0%, rgba(20,40,80,1) 120%);
+    border-radius: 10px;    
+    box-shadow:1px 1px 3px #999;
+    text-align: center;
     color: #fff;
+    text-decoration: none;
 }
 
 
@@ -486,6 +491,11 @@ button {
     
     }
     
+    .btn-tarifs a:hover {
+        background: linear-gradient(0deg, rgb(147, 12, 12) 0%, rgba(20,40,80,1) 120%);
+        text-decoration: none;
+        color: #fff;
+    }
 
 
 
