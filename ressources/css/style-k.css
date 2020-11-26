@@ -308,7 +308,7 @@ header{
 /*TIMELINE==========================*/
 .parallax{
     background: url(../image/hyperloop-paysage.jpg);
-    height: 500px;
+    height: 400px;
     background-attachment: fixed;
     background-position: left;
     background-repeat: no-repeat;   
